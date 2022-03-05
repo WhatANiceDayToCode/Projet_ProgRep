@@ -1,5 +1,4 @@
-package com.example.jeux;
-
+package jeux.hello;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

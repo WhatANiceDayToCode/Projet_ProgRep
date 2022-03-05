@@ -7,7 +7,7 @@
     <groupId>com.example</groupId>
     <artifactId>Jeux</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Jeux</name>
+    <name>jeux</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -80,7 +80,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.jeux/com.example.jeux.HelloApplication</mainClass>
+                            <mainClass>com.example.jeux/jeux.hello.HelloApplication</mainClass>
                         </configuration>
                     </execution>
                 </executions>

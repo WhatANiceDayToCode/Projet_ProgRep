@@ -1,4 +1,4 @@
-package com.example.jeux;
+package jeux.hello;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
