@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.14932885906040266" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Text layoutX="-1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choississez votre jeu" textAlignment="CENTER" wrappingWidth="600.0">
+                     <font>
+                        <Font name="Century Gothic" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="335.0" prefWidth="600.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px;" text="Tic Tac Toe" />
+                        <Button layoutX="179.0" layoutY="109.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px;" text="Pendu" />
+                        <Button layoutX="179.0" layoutY="218.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px;" text="Allumettes" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>
