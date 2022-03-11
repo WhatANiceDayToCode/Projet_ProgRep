@@ -1,5 +1,5 @@
 package serveur;
-import modele.client.ClientImpl;
+import modele.menu.MenuImpl;
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 
@@ -8,9 +8,9 @@ public class Serveur {
         try {
             int port = 8000;
             LocateRegistry.createRegistry(port);
-            Naming.rebind("rmi://localhost:"+ port +"/calculateur", new ClientImpl());
+            Naming.rebind("rmi://localhost:"+ port +"/calculateur", new MenuImpl());
             System.out.println("------------------------------------------------------");
-            System.out.println("Server Jeux prêt !");
+            System.out.println("                  Server Jeux prêt !                  ");
             System.out.println("------------------------------------------------------");
         } catch (Exception e) {
             System.out.println("------------------------------------------------------");
