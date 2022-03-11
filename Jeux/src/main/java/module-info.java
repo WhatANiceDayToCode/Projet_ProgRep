@@ -1,4 +1,4 @@
-module jeux {
+module hello.jeux {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -6,9 +6,6 @@ module jeux {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
 
-    // opens com.example.jeux to javafx.fxml;
-    // exports com.example.jeux;
-
-    opens jeux.hello to javafx.fxml;
-    exports jeux.hello;
+    opens client to javafx.fxml;
+    exports client;
 }
