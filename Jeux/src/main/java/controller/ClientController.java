@@ -1,14 +1,15 @@
 package controller;
-
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class ClientController {
     @FXML
-    private Label welcomeText;
+    private Button btnAllumettes;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
+    private Button btnMorpion;
+
+    @FXML
+    private Button btnPendu;
 }
