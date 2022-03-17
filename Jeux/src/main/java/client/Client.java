@@ -10,7 +10,25 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
+import static javafx.application.Application.launch;
+
 public class Client extends Application {
+
+    public static void main (String[] argv) {
+        try {
+            int port = 8001;
+            MenuInterface obj = (MenuInterface) Naming.lookup("rmi://localhost:"+ port +"/jeux");
+            launch();
+        } catch (Exception e) {
+            System.out.println("Menu Client exception: " + e);
+        }
+    }
+
+    /*public static void main(String[] args) {
+        setMenuInterface(service, 8000);
+        launch();
+    }*/
+
     public static MenuInterface service;
     public static void setMenuInterface(MenuInterface service, int port) {
         try {
@@ -35,9 +53,5 @@ public class Client extends Application {
         stage.show();
         stage.setResizable(false);
 
-    }
-
-    public static void main(String[] args) {
-        launch();
     }
 }

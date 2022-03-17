@@ -6,9 +6,9 @@ import java.rmi.registry.LocateRegistry;
 public class Serveur {
     public static void main (String[] argv) {
         try {
-            int port = 8000;
+            int port = 8001;
             LocateRegistry.createRegistry(port);
-            Naming.rebind("rmi://localhost:"+ port +"/calculateur", new MenuImpl());
+            Naming.rebind("rmi://localhost:"+ port +"/jeux", new MenuImpl());
             System.out.println("------------------------------------------------------");
             System.out.println("                  Server Jeux prêt !                  ");
             System.out.println("------------------------------------------------------");
