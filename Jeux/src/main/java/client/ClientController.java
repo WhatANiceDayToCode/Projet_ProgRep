@@ -16,7 +16,17 @@ public class ClientController {
 
     @FXML
     void onActionbtnMorpion(ActionEvent event) {
-        System.out.println("début du jeu du morpion");
+        System.out.println("Début du jeu du Morpion");
+    }
+
+    @FXML
+    void onActionbtnAllumettes(ActionEvent event) {
+        System.out.println("Début du jeu des Allumettes");
+    }
+
+    @FXML
+    void onActionbtnPendu(ActionEvent event) {
+        System.out.println("Début du jeu du Pendu");
     }
 
 }
