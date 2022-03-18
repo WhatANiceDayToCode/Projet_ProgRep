@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.effect.DropShadow?>
@@ -46,31 +47,32 @@
                             <children>
                                 <BorderPane prefHeight="126.0" prefWidth="600.0">
                                     <center>
-                                        <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Tic Tac Toe" BorderPane.alignment="CENTER">
+                                        <Button fx:id="btnMorpion" mnemonicParsing="false" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Tic Tac Toe" BorderPane.alignment="CENTER">
                                         </Button>
                                     </center>
                                 </BorderPane>
                                 <BorderPane layoutX="10.0" layoutY="115.0" prefHeight="126.0" prefWidth="600.0">
                                     <center>
-                                        <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Pendu" BorderPane.alignment="CENTER">
+                                        <Button fx:id="btnPendu" mnemonicParsing="false" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Pendu" BorderPane.alignment="CENTER">
                                         </Button>
                                     </center>
                                 </BorderPane>
                                 <BorderPane layoutX="10.0" layoutY="178.0" prefHeight="126.0" prefWidth="600.0">
                                     <center>
-                                        <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Allumettes" BorderPane.alignment="CENTER">
+                                        <Button fx:id="btnAllumettes" mnemonicParsing="false" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Allumettes" BorderPane.alignment="CENTER">
                                         </Button>
                                     </center>
                                 </BorderPane>
                             </children>
                             <cursor>
-                                <Cursor fx:constant="OPEN_HAND" />
+                                <Cursor fx:constant="DEFAULT" />
                             </cursor>
                         </VBox>
                     </children>
                 </AnchorPane>
             </items>
         </SplitPane>
+      <Accordion />
     </children>
     <effect>
         <DropShadow />
