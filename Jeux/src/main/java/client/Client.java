@@ -21,6 +21,7 @@ public class Client extends Application {
         try {
             int port = 8001;
             MenuInterface obj = (MenuInterface) Naming.lookup("rmi://localhost:"+ port +"/jeux");
+            System.out.println("Connecté au serveur !");
             launch();
         } catch (Exception e) {
             System.out.println("Menu Client exception: " + e);
