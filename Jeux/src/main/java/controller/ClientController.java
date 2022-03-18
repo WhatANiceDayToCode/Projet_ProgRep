@@ -23,9 +23,4 @@ public class ClientController {
     @FXML
     private Button btnPendu;
 
-    /*@FXML
-    void onBtnPenduClick(ActionEvent event) {
-
-    }*/
-
 }
