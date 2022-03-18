@@ -16,15 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<<<<<<< Updated upstream
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ClientController">
-=======
-<<<<<<< HEAD
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientController">
-=======
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ClientController">
->>>>>>> 6580181b21fc45d73656c594261aa5a289107ad3
->>>>>>> Stashed changes
     <children>
         <SplitPane dividerPositions="0.14932885906040266" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
             <items>
@@ -55,27 +47,19 @@
                             <children>
                                 <BorderPane prefHeight="126.0" prefWidth="600.0">
                                     <center>
-<<<<<<< Updated upstream
-                                        <Button fx:id="btnMorpion" mnemonicParsing="false" onAction="#onActionbtnMorpion" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Tic Tac Toe" BorderPane.alignment="CENTER">
-=======
-<<<<<<< HEAD
-                                        <Button fx:id="btnMorpion" mnemonicParsing="false" onAction="#onBtnPenduClick" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Tic Tac Toe" BorderPane.alignment="CENTER">
-=======
-                                        <Button fx:id="btnMorpion" mnemonicParsing="false" onAction="#onActionbtnMorpion" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Tic Tac Toe" BorderPane.alignment="CENTER">
->>>>>>> 6580181b21fc45d73656c594261aa5a289107ad3
->>>>>>> Stashed changes
+                                        <Button fx:id="btnMorpion" mnemonicParsing="false" onAction="#onActionbtnMorpion" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-color: #E1E1FF;" text="Tic Tac Toe" BorderPane.alignment="CENTER">
                                         </Button>
                                     </center>
                                 </BorderPane>
                                 <BorderPane layoutX="10.0" layoutY="115.0" prefHeight="126.0" prefWidth="600.0">
                                     <center>
-                                        <Button fx:id="btnPendu" mnemonicParsing="false" onAction="#onActionbtnPendu" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Pendu" BorderPane.alignment="CENTER">
+                                        <Button fx:id="btnPendu" mnemonicParsing="false" onAction="#onActionbtnPendu" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-color: #E1E1FF;" text="Pendu" BorderPane.alignment="CENTER">
                                         </Button>
                                     </center>
                                 </BorderPane>
                                 <BorderPane layoutX="10.0" layoutY="178.0" prefHeight="126.0" prefWidth="600.0">
                                     <center>
-                                        <Button fx:id="btnAllumettes" mnemonicParsing="false" onAction="#onActionbtnAllumettes" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Allumettes" BorderPane.alignment="CENTER">
+                                        <Button fx:id="btnAllumettes" mnemonicParsing="false" onAction="#onActionbtnAllumettes" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-color: #E1E1FF;" text="Allumettes" BorderPane.alignment="CENTER">
                                         </Button>
                                     </center>
                                 </BorderPane>
