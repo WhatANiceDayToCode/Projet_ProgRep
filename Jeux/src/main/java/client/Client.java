@@ -33,14 +33,14 @@ public class Client extends Application {
         launch();
     }*/
 
-    public static MenuInterface service;
+    /*public static MenuInterface service;
     public static void setMenuInterface(MenuInterface service, int port) {
         try {
             Client.service = (MenuInterface) Naming.lookup("rmi://localhost:"+port+"/jeux");
         } catch (MalformedURLException | RemoteException | NotBoundException e) {
             System.out.println("Client erreur : " + e);
         }
-    }
+    }*/
 
     private static final int port = 8000; //port (global)
 
