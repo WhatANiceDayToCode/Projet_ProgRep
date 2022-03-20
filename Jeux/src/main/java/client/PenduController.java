@@ -209,15 +209,4 @@ public class PenduController {
         stage.setResizable(false);
     }
 
-    /*@FXML
-    void onActionBtnRetour(ActionEvent event) throws IOException {
-        Stage stage = (Stage) btnRetour.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(Client.class.getResource("/client-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("Menu");
-        stage.setScene(scene);
-        stage.show();
-        stage.setResizable(false);
-    }*/
-
 }
