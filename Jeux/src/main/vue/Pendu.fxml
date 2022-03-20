@@ -33,7 +33,7 @@
             <Button fx:id="c" mnemonicParsing="false" onAction="#onActionC" text="C" GridPane.columnIndex="2" />
             <Button fx:id="d" mnemonicParsing="false" onAction="#onActionD" text="D" GridPane.columnIndex="3" />
             <Button fx:id="e" mnemonicParsing="false" onAction="#onActionE" text="E" GridPane.columnIndex="4" />
-            <Button fx:id="f" mnemonicParsing="false" onAction="#onActionE" text="F" GridPane.columnIndex="5" />
+            <Button fx:id="f" mnemonicParsing="false" onAction="#onActionF" text="F" GridPane.columnIndex="5" />
             <Button fx:id="g" mnemonicParsing="false" onAction="#onActionG" text="G" GridPane.rowIndex="1" />
             <Button fx:id="h" mnemonicParsing="false" onAction="#onActionH" text="H" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button fx:id="i" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onActionI" prefHeight="25.0" prefWidth="24.0" text="I" GridPane.columnIndex="2" GridPane.rowIndex="1" />
@@ -53,7 +53,7 @@
             <Button fx:id="w" mnemonicParsing="false" onAction="#onActionW" text="W" GridPane.columnIndex="4" GridPane.rowIndex="3" />
             <Button mnemonicParsing="false" onAction="#onActionX" text="X" GridPane.columnIndex="5" GridPane.rowIndex="3" fx:id="x" />
             <Button fx:id="y" mnemonicParsing="false" onAction="#onActionY" prefHeight="25.0" prefWidth="26.0" text="Y" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button fx:id="z" mnemonicParsing="false" onAction="#onActionY" prefHeight="25.0" prefWidth="28.0" text="Z" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="z" mnemonicParsing="false" onAction="#onActionZ" prefHeight="25.0" prefWidth="28.0" text="Z" GridPane.columnIndex="3" GridPane.rowIndex="4" />
          </children>
       </GridPane>
       <ImageView fitHeight="368.0" fitWidth="257.0" layoutX="329.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />

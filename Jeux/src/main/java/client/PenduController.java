@@ -1,6 +1,5 @@
 package client;
 
-import client.Client;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,94 +7,170 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class PenduController {
 
+    // Définition des boutons
+    @FXML private Button a;
+    @FXML private Button b;
+    @FXML private Button btnRetour;
+    @FXML private Button c;
+    @FXML private Button d;
+    @FXML private Button e;
+    @FXML private Button f;
+    @FXML private Button g;
+    @FXML private Button h;
+    @FXML private Button i;
+    @FXML private Button j;
+    @FXML private Button k;
+    @FXML private Button l;
+    @FXML private Label lblPendu;
+    @FXML private Button m;
+    @FXML private Button n;
+    @FXML private Button o;
+    @FXML private Button p;
+    @FXML private Button q;
+    @FXML private Button r;
+    @FXML private Button s;
+    @FXML private Button t;
+    @FXML private Button u;
+    @FXML private Button v;
+    @FXML private Button w;
+    @FXML private Button x;
+    @FXML private Button y;
+    @FXML private Button z;
+
+    // Définition des onAction pour chaque bouton
     @FXML
-    private Button a;
+    void onActionA(ActionEvent event) {
+        System.out.println("A");
+    }
 
     @FXML
-    private Button b;
+    void onActionB(ActionEvent event) {
+        System.out.println("B");
+    }
 
     @FXML
-    private Button btnRetour;
+    void onActionC(ActionEvent event) {
+        System.out.println("C");
+    }
 
     @FXML
-    private Button c;
+    void onActionD(ActionEvent event) {
+        System.out.println("D");
+    }
 
     @FXML
-    private Button d;
+    void onActionE(ActionEvent event) {
+        System.out.println("E");
+    }
 
     @FXML
-    private Button e;
+    void onActionF(ActionEvent event) {
+        System.out.println("F");
+    }
 
     @FXML
-    private Button f;
+    void onActionG(ActionEvent event) {
+        System.out.println("G");
+    }
 
     @FXML
-    private Button g;
+    void onActionH(ActionEvent event) {
+        System.out.println("H");
+    }
 
     @FXML
-    private Button h;
+    void onActionI(ActionEvent event) {
+        System.out.println("I");
+    }
 
     @FXML
-    private Button i;
+    void onActionJ(ActionEvent event) {
+        System.out.println("J");
+    }
 
     @FXML
-    private Button j;
+    void onActionK(ActionEvent event) {
+        System.out.println("K");
+    }
 
     @FXML
-    private Button k;
+    void onActionL(ActionEvent event) {
+        System.out.println("L");
+    }
 
     @FXML
-    private Button l;
+    void onActionM(ActionEvent event) {
+        System.out.println("M");
+    }
 
     @FXML
-    private Label lblPendu;
+    void onActionN(ActionEvent event) {
+        System.out.println("N");
+    }
 
     @FXML
-    private Button m;
+    void onActionO(ActionEvent event) {
+        System.out.println("O");
+    }
 
     @FXML
-    private Button n;
+    void onActionP(ActionEvent event) {
+        System.out.println("P");
+    }
 
     @FXML
-    private Button o;
+    void onActionQ(ActionEvent event) {
+        System.out.println("Q");
+    }
 
     @FXML
-    private Button p;
+    void onActionR(ActionEvent event) {
+        System.out.println("R");
+    }
 
     @FXML
-    private Button q;
+    void onActionS(ActionEvent event) {
+        System.out.println("S");
+    }
 
     @FXML
-    private Button r;
+    void onActionT(ActionEvent event) {
+        System.out.println("T");
+    }
 
     @FXML
-    private Button s;
+    void onActionU(ActionEvent event) {
+        System.out.println("U");
+    }
 
     @FXML
-    private Button t;
+    void onActionV(ActionEvent event) {
+        System.out.println("V");
+    }
 
     @FXML
-    private Button u;
+    void onActionW(ActionEvent event) {
+        System.out.println("W");
+    }
 
     @FXML
-    private Button v;
+    void onActionX(ActionEvent event) {
+        System.out.println("X");
+    }
 
     @FXML
-    private Button w;
+    void onActionY(ActionEvent event) {
+        System.out.println("Y");
+    }
 
     @FXML
-    private Button x;
-
-    @FXML
-    private Button y;
-
-    @FXML
-    private Button z;
+    void onActionZ(ActionEvent event) {
+        System.out.println("Z");
+    }
 
     public void onActionBtnRetour(ActionEvent actionEvent) throws IOException {
         System.out.println("Retour Menu");
