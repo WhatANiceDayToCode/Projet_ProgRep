@@ -41,25 +41,6 @@ public class ClientController {
         stage.setScene(scene);
         stage.show();
         stage.setResizable(false);
-
-
-        /*Stage menu = (Stage) btnMorpion.getScene().getWindow();
-        menu.close();*/
-
-        //lancement de la seconde fenetre
-
-        /*try{
-            AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Pendu.fxml"));
-            Scene scene = new Scene(root,600,400);
-            Stage stage = new Stage();
-            stage.setTitle("Jeu du Pendu");
-            stage.setScene(scene);
-            stage.setResizable(false);
-            stage.show();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
     }
 
 }
