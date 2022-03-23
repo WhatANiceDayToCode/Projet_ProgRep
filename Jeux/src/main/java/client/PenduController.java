@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
+import static modele.menu.MenuImpl.*;
 
 public class PenduController {
 
@@ -25,7 +26,6 @@ public class PenduController {
     @FXML private Button j;
     @FXML private Button k;
     @FXML private Button l;
-    @FXML private Label lblPendu;
     @FXML private Button m;
     @FXML private Button n;
     @FXML private Button o;
@@ -40,11 +40,16 @@ public class PenduController {
     @FXML private Button x;
     @FXML private Button y;
     @FXML private Button z;
+    // Définition des labels
+    @FXML private Label lblChancesRestantes;
+    @FXML private Label lblLettreDejaSaisie;
+    @FXML private Label lblPendu;
 
     // Définition des onAction pour chaque bouton
     @FXML
     void onActionA(ActionEvent event) {
         System.out.println("A");
+        // = System.out.print(a.getText());
         a.setDisable(true);
     }
 
@@ -208,5 +213,4 @@ public class PenduController {
         stage.show();
         stage.setResizable(false);
     }
-
 }

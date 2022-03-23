@@ -1,18 +1,15 @@
-package modele.menu;
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
-import java.util.Random;
+package controller;
+
+// Java program to implement
+// Hangman game
+
 import java.util.Scanner;
+import java.util.Random;
 
-public class MenuImpl extends UnicastRemoteObject implements MenuInterface {
+class Game {
 
-    public MenuImpl() throws RemoteException {
-        super();
-    }
-
-    // Fonctions pour le jeu du pendu
     static Scanner input;
-    public static void Pendu()
+    public static void hangman()
     {
         input = new Scanner(System.in);
 
@@ -99,61 +96,62 @@ public class MenuImpl extends UnicastRemoteObject implements MenuInterface {
                 // already guessed letter
                 System.out.println("You ALREADY guessed "
                         + letter + ". \n");
-            } else {
-                // guessed letter is in the word
-                guessinword = (word.indexOf(letter)) != -1;
+            }
 
+            // guessed letter is in the word
+            guessinword = (word.indexOf(letter)) != -1;
 
-                // if statement begins
-                if (guessinword == true) {
+            // if statement begins
+            if (guessinword == true) {
 
-                    // print the letter
-                    System.out.println(
-                            letter + " is present in the word.");
-                    System.out.print("\n");
+                // print the letter
+                System.out.println(
+                        letter + " is present in the word.");
+                System.out.print("\n");
 
-                    // find the letter positions
-                    // replace dashes with those
-                    // letter at valid positions
-                    for (int position = 0;
-                         position < word.length(); position++) {
+                // find the letter positions
+                // replace dashes with those
+                // letter at valid positions
+                for (int position = 0;
+                     position < word.length(); position++) {
 
-                        // guessed letter is equal to
-                        // letter at position in word
-                        // and word1 has previously does not
-                        // have that letter
-                        if (word.charAt(position) == letter
-                                && word1.charAt(position)
-                                != letter) {
+                    // guessed letter is equal to
+                    // letter at position in word
+                    // and word1 has previously does not
+                    // have that letter
+                    if (word.charAt(position) == letter
+                            && word1.charAt(position)
+                            != letter) {
 
-                            word1 = word1.replaceAll("_ ", "_");
-                            String word2;
-                            word2 = word1.substring(0, position)
-                                    + letter
-                                    + word1.substring(position
-                                    + 1);
-                            word2 = word2.replaceAll("_", "_ ");
-                            word1 = word2;
-                        }
+                        word1 = word1.replaceAll("_ ", "_");
+                        String word2;
+                        word2 = word1.substring(0, position)
+                                + letter
+                                + word1.substring(position
+                                + 1);
+                        word2 = word2.replaceAll("_", "_ ");
+                        word1 = word2;
                     }
                 }
+            }
 
+            // if statement ends, else if begins
+            else {
 
-                // if statement ends, else if begins
-                else {
-                    // prints
-                    // wrong = wrong + 1, after every
-                    // wrong answer
-                    System.out.println(letter + " is not present in the word.");
-                    wrong++;
-                }
+                // prints
+                // wrong = wrong + 1, after every
+                // wrong answer
+                System.out.println(
+                        letter
+                                + " is not present in the word.");
+                wrong++;
+            }
 
-                // guess_ = guess_ + 1, after every
-                // attempt
-                guess_++;
+            // guess_ = guess_ + 1, after every
+            // attempt
+            guess_++;
 
-            } // while loop ends
-        }
+        } // while loop ends
 
         // if the lifelines finishes
         if (wrong == 5) {
@@ -171,6 +169,6 @@ public class MenuImpl extends UnicastRemoteObject implements MenuInterface {
     public static void main(String[] args)
     {
         // play hangman game
-        Pendu();
+        hangman();
     }
 }
