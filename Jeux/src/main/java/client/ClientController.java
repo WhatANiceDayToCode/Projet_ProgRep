@@ -24,11 +24,6 @@ public class ClientController {
     }
 
     @FXML
-    void onActionbtnAllumettes(ActionEvent event) throws IOException {
-        System.out.println("Début du jeu des Allumettes");
-    }
-
-    @FXML
     void onActionbtnPendu(ActionEvent even) throws Exception {
         System.out.println("Début du jeu du Pendu");
 
@@ -40,5 +35,16 @@ public class ClientController {
         stage.show();
         stage.setResizable(false);
     }
+    @FXML
+    void onActionbtnAllumettes(ActionEvent even) throws Exception {
+        System.out.println("Début du jeu des Allumettes");
 
-}e
+        Stage stage = (Stage) btnAllumettes.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(Client.class.getResource("/Nim.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        stage.setTitle("Jeu des Allumettes");
+        stage.setScene(scene);
+        stage.show();
+        stage.setResizable(false);
+    }
+}

@@ -47,7 +47,7 @@
                             <children>
                                 <BorderPane prefHeight="126.0" prefWidth="600.0">
                                     <center>
-                                        <Button fx:id="btnMorpion" mnemonicParsing="false" onAction="#onActionbtnMorpion" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-background-color: #E1E1FF;" text="Tic Tac Toe" BorderPane.alignment="CENTER">
+                                        <Button fx:id="btnMorpion" mnemonicParsing="false" onAction="#onActionbtnMorpion" prefHeight="57.0" prefWidth="262.0" style="-fx-padding: 10px; -fx-color: #E1E1FF;" text="Tic Tac Toe" BorderPane.alignment="CENTER">
                                         </Button>
                                     </center>
                                 </BorderPane>
