@@ -6,12 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import serveur.InterfaceRMI.PenduInterface;
+
 import java.io.IOException;
-import static modele.menu.MenuImpl.*;
+import java.rmi.Naming;
 
 public class PenduController {
-
     // Définition des boutons
     @FXML private Button a;
     @FXML private Button b;
@@ -44,6 +46,7 @@ public class PenduController {
     @FXML private Label lblChancesRestantes;
     @FXML private Label lblLettreDejaSaisie;
     @FXML private Label lblPendu;
+    @FXML private ImageView imageViewPendu;
 
     // Définition des onAction pour chaque bouton
     @FXML
@@ -212,5 +215,18 @@ public class PenduController {
         stage.setScene(scene);
         stage.show();
         stage.setResizable(false);
+    }
+
+    private int port = 8001;
+    private int nbChancesRestantes;
+    private PenduInterface penduInterface;
+    public void initialize() {
+        try {
+            this.nbChancesRestantes = 8;
+            this.lblChancesRestantes.setText("Il vous reste " + nbChancesRestantes + " chances restantes");
+            penduInterface = (PenduInterface) Naming.lookup("rmi://localhost:"+ port +"/pendu");
+        } catch (Exception e) {
+            System.out.println("Exception : " + e);
+        }
     }
 }

@@ -56,6 +56,5 @@ public class Client extends Application {
         stage.setScene(scene);
         stage.show();
         stage.setResizable(false);
-
     }
 }
