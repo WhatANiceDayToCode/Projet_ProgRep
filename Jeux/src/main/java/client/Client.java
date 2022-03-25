@@ -21,10 +21,11 @@ public class Client extends Application {
         try {
             int port = 8001;
             MenuInterface obj = (MenuInterface) Naming.lookup("rmi://localhost:"+ port +"/jeux");
+            //Naming.lookup("rmi://localhost:"+ port +"/pendu")
             System.out.println("Connecté au serveur !");
             launch();
         } catch (Exception e) {
-            System.out.println("Menu Client exception: " + e);
+            System.out.println("Client exception: " + e);
         }
     }
 
