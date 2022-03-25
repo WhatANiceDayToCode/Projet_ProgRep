@@ -224,7 +224,7 @@ public class PenduController {
         try {
             this.nbChancesRestantes = 8;
             this.lblChancesRestantes.setText("Il vous reste " + nbChancesRestantes + " chances restantes");
-            //penduInterface = (PenduInterface) Naming.lookup("rmi://localhost:"+ port +"/pendu");
+            penduInterface = (PenduInterface) Naming.lookup("rmi://localhost:"+ port +"/pendu");
         } catch (Exception e) {
             System.out.println("Exception : " + e);
         }
