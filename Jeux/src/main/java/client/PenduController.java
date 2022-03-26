@@ -8,7 +8,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import serveur.InterfaceRMI.PenduInterface;
 import java.io.IOException;
@@ -271,7 +270,7 @@ public class PenduController {
             this.lblChancesRestantes.setText("Il vous reste " + nbChancesRestantes + " chances restantes");
             this.lblLettreDejaSaisie.setText("Ce champs est inutile");
             this.lblMot.setText("Mot à deviner");
-            Image pendu8 = new Image("../vue/poisson/8.jpg");
+            Image pendu8 = new Image("pendu/8.jpg");
             imageViewPendu.setImage(pendu8);
             //this.mot = penduInterface.motAleatoire();
             //this.lblPendu.setText(penduInterface.changeMot(this.mot, this.lettres));
