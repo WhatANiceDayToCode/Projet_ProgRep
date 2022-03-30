@@ -20,6 +20,17 @@ public class NimController {
 
     @FXML private Label lblAllumette;
 
+    public void onActionBtnOne (ActionEvent actionEvent) throws IOException {
+        lblAllumette.setText("-1 allumette");
+    }
+    public void onActionBtnTwo (ActionEvent actionEvent) throws IOException {
+        lblAllumette.setText("-2");
+    }
+    public void onActionBtnThree (ActionEvent actionEvent) throws IOException {
+        lblAllumette.setText("-3");
+    }
+
+
    public void onActionBtnRetour(ActionEvent actionEvent) throws IOException {
         System.out.println("Retour Menu");
         Stage stage = (Stage) btnRetour.getScene().getWindow();

@@ -21,9 +21,9 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="one" mnemonicParsing="false" text="1" GridPane.halignment="CENTER" />
-            <Button fx:id="three" mnemonicParsing="false" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
-            <Button fx:id="two" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Button fx:id="one" mnemonicParsing="false" onAction="#onActionBtnOne" text="1" GridPane.halignment="CENTER" />
+            <Button fx:id="three" mnemonicParsing="false" onAction="#onActionBtnThree" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <Button fx:id="two" mnemonicParsing="false" onAction="#onActionBtnTwo" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
          </children>
       </GridPane>
       <Button fx:id="btnRetour" layoutX="16.0" layoutY="32.0" mnemonicParsing="false" onAction="#onActionBtnRetour" prefWidth="63.0" style="-fx-color: #E1E1FF;" text="Retour" />
