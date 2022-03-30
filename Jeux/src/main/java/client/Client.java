@@ -1,17 +1,11 @@
 package client;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import modele.menu.MenuInterface;
+
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.rmi.Naming;
-import java.rmi.NotBoundException;
-import java.rmi.RemoteException;
 
 import static javafx.application.Application.launch;
 
@@ -20,29 +14,18 @@ public class Client extends Application {
     public static void main (String[] argv) {
         try {
             int port = 8001;
-            MenuInterface obj = (MenuInterface) Naming.lookup("rmi://localhost:"+ port +"/jeux");
-            System.out.println("Connecté au serveur !");
+            Naming.lookup("rmi://localhost:"+ port +"/jeux");
+            Naming.lookup("rmi://localhost:"+ port +"/pendu");
+            System.out.println("------------------------------------------------------");
+            System.out.println("                  Connecté au serveur !               ");
+            System.out.println("------------------------------------------------------");
             launch();
         } catch (Exception e) {
-            System.out.println("Menu Client exception: " + e);
+            System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+            System.out.println("Client exception: " + e);
+            System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
         }
     }
-
-    /*public static void main(String[] args) {
-        setMenuInterface(service, 8000);
-        launch();
-    }*/
-
-    /*public static MenuInterface service;
-    public static void setMenuInterface(MenuInterface service, int port) {
-        try {
-            Client.service = (MenuInterface) Naming.lookup("rmi://localhost:"+port+"/jeux");
-        } catch (MalformedURLException | RemoteException | NotBoundException e) {
-            System.out.println("Client erreur : " + e);
-        }
-    }*/
-
-    private static final int port = 8000; //port (global)
 
     @Override
     // En langage Java, le mot-clé final indique qu'un élément ne peut être changé dans la suite du programme.
@@ -52,9 +35,12 @@ public class Client extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(Client.class.getResource("client-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        // changer le titre de la fenêtre à menu
         stage.setTitle("Menu");
+        // afficher la scene créée dans scene builder
         stage.setScene(scene);
         stage.show();
+        // empêcher de redimensionner la fenêtre
         stage.setResizable(false);
     }
 }
