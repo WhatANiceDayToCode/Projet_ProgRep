@@ -291,6 +291,7 @@ public class PenduController {
     * On désactive le bouton de la lettre pressée grâce à celui-ci
      */
     public void changeMot(ActionEvent event) throws IOException {
+
         String source = ((Button) event.getSource()).getId();
         char lettre = '0';
         switch(source) {
