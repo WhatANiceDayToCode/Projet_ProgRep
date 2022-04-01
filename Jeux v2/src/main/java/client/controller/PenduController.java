@@ -284,6 +284,34 @@ public class PenduController {
         }
     }
 
+    public void verrouillerLettres() {
+        a.setDisable(true);
+        b.setDisable(true);
+        c.setDisable(true);
+        d.setDisable(true);
+        e.setDisable(true);
+        f.setDisable(true);
+        g.setDisable(true);
+        h.setDisable(true);
+        i.setDisable(true);
+        j.setDisable(true);
+        k.setDisable(true);
+        l.setDisable(true);
+        m.setDisable(true);
+        n.setDisable(true);
+        o.setDisable(true);
+        p.setDisable(true);
+        q.setDisable(true);
+        r.setDisable(true);
+        s.setDisable(true);
+        t.setDisable(true);
+        u.setDisable(true);
+        v.setDisable(true);
+        w.setDisable(true);
+        x.setDisable(true);
+        y.setDisable(true);
+        z.setDisable(true);
+    }
     /*
     * Lors du clic sur un bouton du "clavier" affiché à l'écran, on récupère la source de l'évènement
     * Puis, selon le bouton pressé, on récupère son id
@@ -471,17 +499,20 @@ public class PenduController {
             * Alors, on affiche le mot en rouge
             * > s'il a trouvé le mot
             * On affiche celui-ci en vert
+            * On verrouille toutes les touches car fin de partie
             * Et on affiche l'image du poisson pouce en l'air
              */
 
             if(nbChancesRestantes == 0) {
                 this.lblMot.setText(this.mot);
                 this.lblMot.setTextFill(Color.RED);
-            } else if(!this.lblMot.getText().contains("_")){
+                verrouillerLettres();
+            } else if(!this.lblMot.getText().contains("_")) {
                 this.lblMot.setText(this.mot);
                 this.lblMot.setTextFill(Color.GREEN);
                 Image gagne = new Image("https://i.imgur.com/bJTwFaP.jpg");
                 imageViewPendu.setImage(gagne);
+                verrouillerLettres();
             }
         }
     }
