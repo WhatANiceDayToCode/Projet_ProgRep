@@ -19,7 +19,7 @@ public class PenduImpl extends UnicastRemoteObject implements PenduInterface {
      */
     public String motAleatoire() throws RemoteException {
         Dico[] dictionnaire = Dico.values();
-        int tailleDico = randInt(dictionnaire.length);
+        int tailleDico = nombreAleatoire(dictionnaire.length);
         String mot = dictionnaire[tailleDico].toString();
         return mot;
     }
@@ -27,7 +27,7 @@ public class PenduImpl extends UnicastRemoteObject implements PenduInterface {
     /*
     * Fonction qui retourne un nombre aléatoire en tenant compte d'un maximum
      */
-    public int randInt(int max) throws RemoteException {
+    public int nombreAleatoire(int max) throws RemoteException {
         Random rand = new Random();
         int n = rand.nextInt(max);
         return n;
@@ -62,7 +62,7 @@ public class PenduImpl extends UnicastRemoteObject implements PenduInterface {
     * True si oui
     * False si non
      */
-    public boolean contientChar(char[] tab, char c) throws RemoteException {
+    public boolean contientCaractere(char[] tab, char c) throws RemoteException {
         for(int i = 0; i < tab.length; i++){
             if(tab[i] == c){
                 return false;
@@ -74,11 +74,11 @@ public class PenduImpl extends UnicastRemoteObject implements PenduInterface {
     /*
     * Cette fonction permet d'ajouter un caractère entré à un tableau
      */
-    public char[] ajouterChar(char[] tab, char c) throws RemoteException {
+    public char[] ajouterCaractere(char[] tab, char c) throws RemoteException {
         char[] tabVide = new char[1];
         for(int i = 0; i < tab.length; i++){
             if(tab[i] == tabVide[0]){
-                if(contientChar(tab, c)){
+                if(contientCaractere(tab, c)){
                     tab[i] = c;
                 }
             }

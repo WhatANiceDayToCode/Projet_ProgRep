@@ -1,7 +1,6 @@
 package client.controller;
 
 import client.Client;
-import client.modele.interafceRMI.PenduInterface;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

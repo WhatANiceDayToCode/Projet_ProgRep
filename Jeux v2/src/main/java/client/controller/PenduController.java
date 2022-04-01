@@ -443,9 +443,9 @@ public class PenduController {
          */
 
         if(lettre != '0'){
-            if(pendu.contientChar(lettres, lettre)) {
-                this.lettres = pendu.ajouterChar(this.lettres, lettre);
-                if (pendu.contientChar(mot.toCharArray(), lettre)) {
+            if(pendu.contientCaractere(lettres, lettre)) {
+                this.lettres = pendu.ajouterCaractere(this.lettres, lettre);
+                if (pendu.contientCaractere(mot.toCharArray(), lettre)) {
                     nbChancesRestantes--;
                     switch (nbChancesRestantes) {
 
