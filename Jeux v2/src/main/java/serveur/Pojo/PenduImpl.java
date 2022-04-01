@@ -11,58 +11,74 @@ public class PenduImpl extends UnicastRemoteObject implements PenduInterface {
         super();
     }
 
+    /*
+    * Dans cette fonction on récupère les mots du dico
+    * On calcule la taille maximale de celui-ci
+    * On génère un mot du dico
+    * Finalement on retourne celui-ci
+     */
     public String motAleatoire() throws RemoteException {
-        //On récupère toutes les valeurs du dictionnaire.
         Dico[] dictionnaire = Dico.values();
-        //On créer un entier aléatoire de la taille du dictionnaire.
-        int entierAleatoire = randInt(dictionnaire.length);
-        //On génère le mot aléatoirement et on le retourne.
-        String mot = dictionnaire[entierAleatoire].toString();
+        int tailleDico = randInt(dictionnaire.length);
+        String mot = dictionnaire[tailleDico].toString();
         return mot;
     }
 
+    /*
+    * Fonction qui retourne un nombre aléatoire en tenant compte d'un maximum
+     */
     public int randInt(int max) throws RemoteException {
         Random rand = new Random();
         int n = rand.nextInt(max);
         return n;
     }
 
+    /*
+    * Le mot est tout d'abord en liste de caractères
+    * On vérifie ensuite si la lettre entrée correspond à la lettre du mot
+    * Si elle correspond : on remplace la lettre dans le mot
+    * Sinon on laisse le "_ "
+    * Ensuite on concatène les caractères du mot
+    * Et on l'affiche !
+     */
     public String changeMot(String mot, char[] lettres) throws RemoteException {
-        //On initialise les variables de travail.
         String motAffichage = "";
         String lettre = "";
-        //On décompose le mot en liste de caractère pour faciliter les comparaisons de caractère.
-        char[] motDecompose = mot.toCharArray();
-        /*
-         * On rentre dans la boucle qui va permettre de vérifier, pour chaque lettre du mot cherché, si les
-         * lettres données par le joueur et une lettre du mot correspondent.
-         */
-        for(int i = 0; i < motDecompose.length; i++){
-            lettre = "_ "; //Initialisation de la lettre par défaut pour le cas où la lettre ne correspond pas.
+        char[] motLettreParLettre = mot.toCharArray();
+        for(int i = 0; i < motLettreParLettre.length; i++){
+            lettre = "_ ";
             for(int j = 0; j < lettres.length; j++){
-                if(motDecompose[i] == lettres[j]) {
-                    lettre = lettres[j] + " "; //La lettre correspond donc on lui attribue la bonne valeur.
+                if(motLettreParLettre[i] == lettres[j]) {
+                    lettre = lettres[j] + " ";
                 }
             }
-            motAffichage += lettre; //On concatène le lettre au mot qui va s'afficher.
+            motAffichage += lettre;
         }
-        return motAffichage; //On retourne le mot qui va s'afficher sur l'écran du joueur.
+        return motAffichage;
     }
 
+    /*
+    * Cette fonction vérifie si le mot contient le caractère
+    * True si oui
+    * False si non
+     */
     public boolean contientChar(char[] tab, char c) throws RemoteException {
         for(int i = 0; i < tab.length; i++){
             if(tab[i] == c){
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
+    /*
+    * Cette fonction permet d'ajouter un caractère entré à un tableau
+     */
     public char[] ajouterChar(char[] tab, char c) throws RemoteException {
-        char[] testNull = new char[1];
+        char[] tabVide = new char[1];
         for(int i = 0; i < tab.length; i++){
-            if(tab[i] == testNull[0]){
-                if(!contientChar(tab, c)){
+            if(tab[i] == tabVide[0]){
+                if(contientChar(tab, c)){
                     tab[i] = c;
                 }
             }

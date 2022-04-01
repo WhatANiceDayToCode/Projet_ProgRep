@@ -14,7 +14,6 @@ import javafx.stage.Stage;
 import serveur.InterfaceRMI.PenduInterface;
 import java.io.IOException;
 import java.rmi.Naming;
-import java.rmi.RemoteException;
 
 public class PenduController {
     // Définition des boutons
@@ -290,6 +289,7 @@ public class PenduController {
     * Puis, selon le bouton pressé, on récupère son id
     * On désactive le bouton de la lettre pressée grâce à celui-ci
      */
+
     public void changeMot(ActionEvent event) throws IOException {
         String source = ((Button) event.getSource()).getId();
         char lettre = '0';
@@ -402,6 +402,7 @@ public class PenduController {
                 lettre = '0';
                 break;
         }
+
         /*
         * Si la lettre n'est pas 0 :
         * (ce qui signifie qu'un caractère correspond aux lettres de l'alphabet)
@@ -411,17 +412,20 @@ public class PenduController {
         * Après l'affichage des différentes images, on affiche le nombre de chances restantes à l'écran,
         * ainsi que le mot mis à jour
          */
+
         if(lettre != '0'){
-            if(!pendu.contientChar(lettres, lettre)){
+            if(pendu.contientChar(lettres, lettre)) {
                 this.lettres = pendu.ajouterChar(this.lettres, lettre);
-                if(!pendu.contientChar(mot.toCharArray(), lettre)){
+                if (pendu.contientChar(mot.toCharArray(), lettre)) {
                     nbChancesRestantes--;
-                    switch(nbChancesRestantes){
-                        /*
-                        * Selon le nombre de chances restantes, on affiche l'image correspondante
-                        * Jusqu'à ce que celui-ci les aies toutes épuisées
-                        * (Les images sont sous forme de lien : les chemins ne fonctionnant pas...)
-                         */
+                    switch (nbChancesRestantes) {
+
+                         /*
+                         * Selon le nombre de chances restantes, on affiche l'image correspondante
+                         * Jusqu'à ce que celui-ci les aies toutes épuisées
+                         * (Les images sont sous forme de lien : les chemins ne fonctionnant pas...)
+                          */
+
                         case 7:
                             Image pendu7 = new Image("https://i.imgur.com/zJf0at5.jpg");
                             imageViewPendu.setImage(pendu7);
@@ -434,7 +438,7 @@ public class PenduController {
                             Image pendu5 = new Image("https://i.imgur.com/LkFiZln.jpg");
                             imageViewPendu.setImage(pendu5);
                             break;
-                        case 4 :
+                        case 4:
                             Image pendu4 = new Image("https://i.imgur.com/Ld0VSpH.jpg");
                             imageViewPendu.setImage(pendu4);
                             break;
@@ -459,6 +463,7 @@ public class PenduController {
                 }
                 this.lblMot.setText(pendu.changeMot(mot, lettres));
             }
+
             /*
             * Si l'utilisateur a utilisé toutes ses chances (8)
             * > et qu'il n'a pas trouvé le mot :

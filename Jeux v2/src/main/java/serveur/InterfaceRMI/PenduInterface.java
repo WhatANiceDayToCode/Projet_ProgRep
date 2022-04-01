@@ -1,7 +1,5 @@
 package serveur.InterfaceRMI;
 
-
-import java.io.IOException;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
@@ -13,8 +11,8 @@ public interface PenduInterface extends Remote {
 
      public String changeMot(String mot, char[] lettres) throws RemoteException;
 
-     public char[] ajouterChar(char[] tab, char c) throws RemoteException;
-
      public boolean contientChar(char[] tab, char c) throws RemoteException;
+
+     public char[] ajouterChar(char[] tab, char c) throws RemoteException;
 }
 

@@ -29,6 +29,9 @@ public class ClientController {
 
 
     private int port = 8001;
+    /*
+    *
+     */
     @FXML
     void onActionbtnPendu(ActionEvent even) throws Exception {
         System.out.println("Début du jeu du Pendu");
@@ -50,8 +53,6 @@ public class ClientController {
     @FXML
     void onActionbtnAllumettes(ActionEvent even) throws Exception {
         System.out.println("Début du jeu des Allumettes");
-
-
         Stage stage = (Stage) btnAllumettes.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(Client.class.getResource("/Nim.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
