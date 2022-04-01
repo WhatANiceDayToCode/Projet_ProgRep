@@ -7,7 +7,7 @@ Contient les jeux suivants :
 
 ----------
 
-# /!\ Ne pas avoir de VPN (cisco par ex) d'activé /!\
+# /!\ Ne pas avoir de VPN ou de pare-feu activé (cisco par ex) /!\
 
 ----------
 
