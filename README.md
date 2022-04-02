@@ -16,3 +16,6 @@ Contient les jeux suivants :
 
 ### Interface pendu :
 ![image](https://user-images.githubusercontent.com/42692272/161065412-184e221c-680e-4995-8d78-cd9a86c25b91.png)
+
+### Interface tic-tac-toe :
+![demo_tic-tac-toe_projet_java_game_server](https://user-images.githubusercontent.com/90621409/161376115-59f8c206-624a-482a-86f8-4ce252a27cfd.gif)
