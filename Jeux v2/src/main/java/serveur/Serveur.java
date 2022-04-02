@@ -1,10 +1,17 @@
 package serveur;
+
 import client.modele.menu.MenuImpl;
 import serveur.Pojo.PenduImpl;
-
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 
+/*
+* RMI signifie Remote Method Invocation.
+* Il s'agit d'un mécanisme qui permet à un objet résidant dans un système (JVM)
+* d'accéder à / invoquer un objet exécuté sur une autre JVM.
+* RMI est utilisé pour créer des applications distribuées,
+* il fournit une communication à distance entre les programmes Java.
+ */
 public class Serveur {
     public static void main (String[] argv) {
         try {
