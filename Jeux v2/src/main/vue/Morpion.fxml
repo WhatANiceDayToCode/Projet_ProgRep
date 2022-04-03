@@ -84,92 +84,92 @@
             <Rectangle fx:id="btnCaseA1" arcHeight="5.0" arcWidth="5.0" fill="#0084ff" height="95.0" onMouseClicked="#onMouseClickedBtnCaseA1" onMouseEntered="#onMouseEnteredBtnCaseA1" onMouseExited="#onMouseExitedBtnCaseA1" stroke="BLACK" strokeType="INSIDE" width="198.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
             <ImageView id="crossA1" fx:id="cross_A1" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_cross-removebg-preview.png" />
+                  <Image url="@morpion/morpion_cross-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="circleA1" fx:id="circle_A1" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_circle-removebg-preview.png" />
+                  <Image url="@morpion/morpion_circle-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="crossB1" fx:id="cross_B1" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_cross-removebg-preview.png" />
+                  <Image url="@morpion/morpion_cross-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="circleB1" fx:id="circle_B1" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_circle-removebg-preview.png" />
+                  <Image url="@morpion/morpion_circle-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="crossC1" fx:id="cross_C1" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_cross-removebg-preview.png" />
+                  <Image url="@morpion/morpion_cross-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="circleC1" fx:id="circle_C1" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_circle-removebg-preview.png" />
+                  <Image url="@morpion/morpion_circle-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="crossA2" fx:id="cross_A2" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_cross-removebg-preview.png" />
+                  <Image url="@morpion/morpion_cross-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="circleA2" fx:id="circle_A2" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_circle-removebg-preview.png" />
+                  <Image url="@morpion/morpion_circle-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="crossB2" fx:id="cross_B2" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_cross-removebg-preview.png" />
+                  <Image url="@morpion/morpion_cross-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="circleB2" fx:id="circle_B2" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_circle-removebg-preview.png" />
+                  <Image url="@morpion/morpion_circle-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="crossC2" fx:id="cross_C2" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_cross-removebg-preview.png" />
+                  <Image url="@morpion/morpion_cross-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="circleC2" fx:id="circle_C2" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_circle-removebg-preview.png" />
+                  <Image url="@morpion/morpion_circle-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="crossA3" fx:id="cross_A3" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_cross-removebg-preview.png" />
+                  <Image url="@morpion/morpion_cross-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="circleA3" fx:id="circle_A3" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_circle-removebg-preview.png" />
+                  <Image url="@morpion/morpion_circle-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="crossB3" fx:id="cross_B3" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_cross-removebg-preview.png" />
+                  <Image url="@morpion/morpion_cross-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="circleB3" fx:id="circle_B3" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_circle-removebg-preview.png" />
+                  <Image url="@morpion/morpion_circle-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="crossC3" fx:id="cross_C3" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_cross-removebg-preview.png" />
+                  <Image url="@morpion/morpion_cross-removebg-preview.png" />
                </image>
             </ImageView>
             <ImageView id="circleC3" fx:id="circle_C3" fitHeight="97.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@client/morpion_circle-removebg-preview.png" />
+                  <Image url="@morpion/morpion_circle-removebg-preview.png" />
                </image>
             </ImageView>
          </children>
