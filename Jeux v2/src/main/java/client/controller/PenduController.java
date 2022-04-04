@@ -312,6 +312,7 @@ public class PenduController {
         y.setDisable(true);
         z.setDisable(true);
     }
+
     /*
     * Lors du clic sur un bouton du "clavier" affiché à l'écran, on récupère la source de l'évènement
     * Puis, selon le bouton pressé, on récupère son id
