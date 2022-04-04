@@ -19,8 +19,11 @@ Contient les jeux suivants :
 ### Interface pendu :
 ![image](https://user-images.githubusercontent.com/42692272/161065412-184e221c-680e-4995-8d78-cd9a86c25b91.png)
 
-### Démo interface pendu :
+### Démo interface pendu *(perdu)* :
 https://user-images.githubusercontent.com/42692272/161516330-da23a89f-c23e-4af8-bea9-8b5459727457.mp4
+
+### Démo interface pendu *(gagné)* :
+https://user-images.githubusercontent.com/42692272/161517138-92b212e0-fe52-45d7-9219-7dfb009b96b9.mp4
 
 ----------
 
