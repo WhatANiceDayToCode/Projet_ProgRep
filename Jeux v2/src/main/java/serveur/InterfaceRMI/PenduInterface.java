@@ -15,4 +15,3 @@ public interface PenduInterface extends Remote {
 
      public char[] ajouterCaractere(char[] tab, char c) throws RemoteException;
 }
-

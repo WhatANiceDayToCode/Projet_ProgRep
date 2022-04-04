@@ -79,170 +79,171 @@ public class PenduController {
     @FXML
     private ImageView imageViewPendu;
 
+     /*
+     * Définition des onAction pour chaque bouton
+     * Ici, il s'agit de désactiver le bouton une fois celui-ci cliqué
+     * Notons toutefois que cette solution n'est pas la plus optimale
+     * Nous avons donc changé cette façon de faire et laissé ici à titre indicatif
+      */
 
-    /*
-    * Définition des onAction pour chaque bouton
-    * Ici, il s'agit de désactiver le bouton une fois celui-ci cliqué
-    * Notons toutefois que cette solution n'est pas la plus optimale
-    * Nous avons donc changé cette façon de faire et laissé ici à titre indicatif
-     */
-    /*@FXML
-    void onActionA(ActionEvent event) {
-        System.out.println("A");
-        // = System.out.print(a.getText());
-        a.setDisable(true);
-    }
-
-    @FXML
-    void onActionB(ActionEvent event) {
-        System.out.println("B");
-        b.setDisable(true);
-    }
-
-    @FXML
-    void onActionC(ActionEvent event) {
-        System.out.println("C");
-        c.setDisable(true);
-    }
-
-    @FXML
-    void onActionD(ActionEvent event) {
-        System.out.println("D");
-        d.setDisable(true);
-    }
-
-    @FXML
-    void onActionE(ActionEvent event) {
-        System.out.println("E");
-        e.setDisable(true);
-    }
-
-    @FXML
-    void onActionF(ActionEvent event) {
-        System.out.println("F");
-        f.setDisable(true);
-    }
-
-    @FXML
-    void onActionG(ActionEvent event) {
-        System.out.println("G");
-        g.setDisable(true);
-    }
-
-    @FXML
-    void onActionH(ActionEvent event) {
-        System.out.println("H");
-        h.setDisable(true);
-    }
-
-    @FXML
-    void onActionI(ActionEvent event) {
-        System.out.println("I");
-        i.setDisable(true);
-    }
-
-    @FXML
-    void onActionJ(ActionEvent event) {
-        System.out.println("J");
-        j.setDisable(true);
-    }
-
-    @FXML
-    void onActionK(ActionEvent event) {
-        System.out.println("K");
-        k.setDisable(true);
-    }
-
-    @FXML
-    void onActionL(ActionEvent event) {
-        System.out.println("L");
-        l.setDisable(true);
-    }
-
-    @FXML
-    void onActionM(ActionEvent event) {
-        System.out.println("M");
-        m.setDisable(true);
-    }
-
-    @FXML
-    void onActionN(ActionEvent event) {
-        System.out.println("N");
-        n.setDisable(true);
-    }
-
-    @FXML
-    void onActionO(ActionEvent event) {
-        System.out.println("O");
-        o.setDisable(true);
-    }
-
-    @FXML
-    void onActionP(ActionEvent event) {
-        System.out.println("P");
-        p.setDisable(true);
-    }
-
-    @FXML
-    void onActionQ(ActionEvent event) {
-        System.out.println("Q");
-        q.setDisable(true);
-    }
-
-    @FXML
-    void onActionR(ActionEvent event) {
-        System.out.println("R");
-        r.setDisable(true);
-    }
-
-    @FXML
-    void onActionS(ActionEvent event) {
-        System.out.println("S");
-        s.setDisable(true);
-    }
-
-    @FXML
-    void onActionT(ActionEvent event) {
-        System.out.println("T");
-        t.setDisable(true);
-    }
-
-    @FXML
-    void onActionU(ActionEvent event) {
-        System.out.println("U");
-        u.setDisable(true);
-    }
-
-    @FXML
-    void onActionV(ActionEvent event) {
-        System.out.println("V");
-        v.setDisable(true);
-    }
-
-    @FXML
-    void onActionW(ActionEvent event) {
-        System.out.println("W");
-        w.setDisable(true);
-    }
-
-    @FXML
-    void onActionX(ActionEvent event) {
-        System.out.println("X");
-        x.setDisable(true);
-    }
-
-    @FXML
-    void onActionY(ActionEvent event) {
-        System.out.println("Y");
-        y.setDisable(true);
-    }
-
-    @FXML
-    void onActionZ(ActionEvent event) {
-        System.out.println("Z");
-        z.setDisable(true);
-    }
-    */
+     /*
+     * @FXML
+     * void onActionA(ActionEvent event) {
+     * System.out.println("A");
+     * // = System.out.print(a.getText());
+     * a.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionB(ActionEvent event) {
+     * System.out.println("B");
+     * b.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionC(ActionEvent event) {
+     * System.out.println("C");
+     * c.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionD(ActionEvent event) {
+     * System.out.println("D");
+     * d.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionE(ActionEvent event) {
+     * System.out.println("E");
+     * e.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionF(ActionEvent event) {
+     * System.out.println("F");
+     * f.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionG(ActionEvent event) {
+     * System.out.println("G");
+     * g.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionH(ActionEvent event) {
+     * System.out.println("H");
+     * h.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionI(ActionEvent event) {
+     * System.out.println("I");
+     * i.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionJ(ActionEvent event) {
+     * System.out.println("J");
+     * j.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionK(ActionEvent event) {
+     * System.out.println("K");
+     * k.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionL(ActionEvent event) {
+     * System.out.println("L");
+     * l.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionM(ActionEvent event) {
+     * System.out.println("M");
+     * m.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionN(ActionEvent event) {
+     * System.out.println("N");
+     * n.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionO(ActionEvent event) {
+     * System.out.println("O");
+     * o.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionP(ActionEvent event) {
+     * System.out.println("P");
+     * p.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionQ(ActionEvent event) {
+     * System.out.println("Q");
+     * q.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionR(ActionEvent event) {
+     * System.out.println("R");
+     * r.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionS(ActionEvent event) {
+     * System.out.println("S");
+     * s.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionT(ActionEvent event) {
+     * System.out.println("T");
+     * t.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionU(ActionEvent event) {
+     * System.out.println("U");
+     * u.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionV(ActionEvent event) {
+     * System.out.println("V");
+     * v.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionW(ActionEvent event) {
+     * System.out.println("W");
+     * w.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionX(ActionEvent event) {
+     * System.out.println("X");
+     * x.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionY(ActionEvent event) {
+     * System.out.println("Y");
+     * y.setDisable(true);
+     * }
+     * 
+     * @FXML
+     * void onActionZ(ActionEvent event) {
+     * System.out.println("Z");
+     * z.setDisable(true);
+     * }
+      */
 
     // Lorsque le bouton retour est pressé, on retourne au menu
     public void onActionBtnRetour(ActionEvent actionEvent) throws IOException {
@@ -265,10 +266,12 @@ public class PenduController {
 
     public void initialize() {
         try {
-            /* La méthode lookup() va rechercher l'objet dans le registre du serveur et retourner un objet stub.
-            * L'objet retourné est de la classe Remote
-            * (cette classe est la classe mère de tous les objets distants).
-            */
+            /*
+             * La méthode lookup() va rechercher l'objet dans le registre du serveur et
+             * retourner un objet stub.
+             * L'objet retourné est de la classe Remote
+             * (cette classe est la classe mère de tous les objets distants).
+             */
             pendu = (PenduInterface) Naming.lookup("rmi://localhost:" + port + "/pendu");
             // on attribue un nombre de chances, ici, 8
             this.nbChancesRestantes = 8;
@@ -314,16 +317,17 @@ public class PenduController {
     }
 
     /*
-    * Lors du clic sur un bouton du "clavier" affiché à l'écran, on récupère la source de l'évènement
-    * Puis, selon le bouton pressé, on récupère son id
-    * On désactive le bouton de la lettre pressée grâce à celui-ci
+     * Lors du clic sur un bouton du "clavier" affiché à l'écran, on récupère la
+     * source de l'évènement
+     * Puis, selon le bouton pressé, on récupère son id
+     * On désactive le bouton de la lettre pressée grâce à celui-ci
      */
 
     public void changeMot(ActionEvent event) throws IOException {
 
         String source = ((Button) event.getSource()).getId();
         char lettre = '0';
-        switch(source) {
+        switch (source) {
             case "a":
                 lettre = 'a';
                 a.setDisable(true);
@@ -433,28 +437,29 @@ public class PenduController {
                 break;
         }
 
-        /*
-        * Si la lettre n'est pas 0 :
-        * (ce qui signifie qu'un caractère correspond aux lettres de l'alphabet)
-        * On vérifie que le mot contient le caractère
-        * Et on ajoute ce caractère au tableau de lettres : lettres[]
-        * Si le mot ne contient pas le caractère entré, on retire une chance
-        * Après l'affichage des différentes images, on affiche le nombre de chances restantes à l'écran,
-        * ainsi que le mot mis à jour
-         */
+         /*
+         * Si la lettre n'est pas 0 :
+         * (ce qui signifie qu'un caractère correspond aux lettres de l'alphabet)
+         * On vérifie que le mot contient le caractère
+         * Et on ajoute ce caractère au tableau de lettres : lettres[]
+         * Si le mot ne contient pas le caractère entré, on retire une chance
+         * Après l'affichage des différentes images, on affiche le nombre de chances
+         * restantes à l'écran,
+         * ainsi que le mot mis à jour
+          */
 
-        if(lettre != '0'){
-            if(pendu.contientCaractere(lettres, lettre)) {
+        if (lettre != '0') {
+            if (pendu.contientCaractere(lettres, lettre)) {
                 this.lettres = pendu.ajouterCaractere(this.lettres, lettre);
                 if (pendu.contientCaractere(mot.toCharArray(), lettre)) {
                     nbChancesRestantes--;
                     switch (nbChancesRestantes) {
 
-                         /*
+                        /*
                          * Selon le nombre de chances restantes, on affiche l'image correspondante
                          * Jusqu'à ce que celui-ci les aies toutes épuisées
                          * (Les images sont sous forme de lien : les chemins ne fonctionnant pas...)
-                          */
+                         */
 
                         case 7:
                             Image pendu7 = new Image("https://i.imgur.com/zJf0at5.jpg");
@@ -494,21 +499,21 @@ public class PenduController {
                 this.lblMot.setText(pendu.changeMot(mot, lettres));
             }
 
-            /*
-            * Si l'utilisateur a utilisé toutes ses chances (8)
-            * > et qu'il n'a pas trouvé le mot :
-            * Alors, on affiche le mot en rouge
-            * > s'il a trouvé le mot
-            * On affiche celui-ci en vert
-            * On verrouille toutes les touches car fin de partie
-            * Et on affiche l'image du poisson pouce en l'air
-             */
+             /*
+             * Si l'utilisateur a utilisé toutes ses chances (8)
+             * > et qu'il n'a pas trouvé le mot :
+             * Alors, on affiche le mot en rouge
+             * > s'il a trouvé le mot
+             * On affiche celui-ci en vert
+             * On verrouille toutes les touches car fin de partie
+             * Et on affiche l'image du poisson pouce en l'air
+              */
 
-            if(nbChancesRestantes == 0) {
+            if (nbChancesRestantes == 0) {
                 this.lblMot.setText(this.mot);
                 this.lblMot.setTextFill(Color.RED);
                 verrouillerLettres();
-            } else if(!this.lblMot.getText().contains("_")) {
+            } else if (!this.lblMot.getText().contains("_")) {
                 this.lblMot.setText(this.mot);
                 this.lblMot.setTextFill(Color.GREEN);
                 Image gagne = new Image("https://i.imgur.com/bJTwFaP.jpg");
