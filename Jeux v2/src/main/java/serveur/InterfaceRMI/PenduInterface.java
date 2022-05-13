@@ -7,7 +7,7 @@ public interface PenduInterface extends Remote {
 
      public String motAleatoire() throws RemoteException;
 
-     public int nombreAleatoire(int max) throws RemoteException;
+    // public int nombreAleatoire(int max) throws RemoteException;
 
      public String changeMot(String mot, char[] lettres) throws RemoteException;
 
